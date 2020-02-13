@@ -1,6 +1,6 @@
 ---
 - name: Nexus
-  hosts: nexus
+  hosts: all
   become: yes
 
   vars:
