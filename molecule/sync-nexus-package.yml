@@ -16,12 +16,12 @@
         path: "{{ molecule_project_dir }}/molecule/.nexus-downloads"
         state: directory
 
-    - name: Get link to current nexus version
-      uri:
-        url: "{{ nexus_download_url }}/latest-unix.tar.gz"
-        method: CONNECT
-        status_code: 302
-      register: nexus_latest_uri_call
+    #- name: Get link to current nexus version
+      #uri:
+       #url: "{{ nexus_download_url }}/latest-unix.tar.gz"
+        #method: CONNECT
+        #status_code: 302
+      #register: nexus_latest_uri_call
 
     - name: get the current nexus version
       get_url:
